@@ -1,7 +1,10 @@
 class Codebreaker
   class Game
     attr_reader :output
-
+    EXACT_MATCH = "+"
+    NUMBER_MATCH = "-"
+    NO_MATCH = ""
+    WRONG_NUMBER_OF_DIGITS = "Try guessing a number with four digits."
 
     def initialize(output)
       @output = output
@@ -11,41 +14,24 @@ class Codebreaker
       @secret_number = secret_number
 
       output.puts "Welcome to Codebreaker"
-
       output.puts "Enter guess:"
     end
 
     def guess(input)
       if input.size != 4
-        output.puts "Try guessing a number with four digits"
+        puts WRONG_NUMBER_OF_DIGITS
       else
-        output.puts ''
+        puts NO_MATCH
       end
     end
 
     def number_match(input)
-      input.include?('@secret_number') ? (puts '-') : (puts '')
+      input.include?(@secret_number) ? (NUMBER_MATCH) : (NO_MATCH)
     end
 
-            #my_string.include?('ahr') ? (puts 'String includes ahr') : (puts 'String does not include ahr')
-            # my_string = "abcdefg"
-            #if my_string.include? "cde"
-            #puts "String includes 'cde'"
-            # end
+    def exact_match(input)
+      #...
+    end
 
-            #  def number_match(input)
-            #    if secret_number.match == guess.match
-            #      output.puts '-'
-            #    else
-            #      output.puts ''
-            #    end
-            #  end
-
-            #  def exact_match(input)
-            #    if secret_number.match == guess.match
-            #      output.puts '-'
-            #    else
-            #      output.puts ''
-            #    end
   end
 end
