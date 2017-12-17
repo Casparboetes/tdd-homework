@@ -16,10 +16,36 @@ class Codebreaker
     end
 
     def guess(input)
-      while input.length != 4
-        puts "Try guessing a number with four digits."
-        break if i == 4
+      if input.size != 4
+        output.puts "Try guessing a number with four digits"
+      else
+        #output.puts ""
       end
     end
+
+    def number_mactch
+      # -
+    end
+
+    def exact_match
+      # +
+    end
+
+
+
+
+
   end
 end
+
+
+
+
+#puts input
+#if input.size <= 3
+#  puts "Try guessing a number with four digits."
+#elsif input.size >= 5
+#  puts "Try guessing a number with four digits."
+#else
+#
+# end
