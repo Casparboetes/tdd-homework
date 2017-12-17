@@ -16,8 +16,9 @@ class Codebreaker
     end
 
     def guess(input)
-      if input.length != 4
+      while input.length != 4
         puts "Try guessing a number with four digits."
+        break if i == 4
       end
     end
   end
