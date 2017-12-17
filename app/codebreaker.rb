@@ -26,7 +26,7 @@ class Codebreaker
     end
 
     def number_match(input)
-      input.include?(@secret_number) ? (NUMBER_MATCH) : (NO_MATCH)
+      input.include?(@secret_number) ? (puts NUMBER_MATCH) : (puts NO_MATCH)
     end
 
     def exact_match(input)
