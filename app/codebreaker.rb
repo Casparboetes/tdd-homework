@@ -19,7 +19,7 @@ class Codebreaker
       if input.size != 4
         output.puts "Try guessing a number with four digits"
       else
-        #output.puts ""
+        output.puts ""
       end
     end
 
