@@ -2,6 +2,7 @@ class Codebreaker
   class Game
     attr_reader :output
 
+
     def initialize(output)
       @output = output
     end
@@ -14,10 +15,13 @@ class Codebreaker
     end
 
     def guess(input)
+
+
+
       # Make sure to replace next line with the actual implemented marking algorithm,
       # using the @secret_number
 
-      output.puts "you typed '#{input}'"
+      #output.puts "you typed '#{input}'"
     end
   end
 end
