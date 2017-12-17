@@ -19,33 +19,33 @@ class Codebreaker
       if input.size != 4
         output.puts "Try guessing a number with four digits"
       else
-        output.puts ""
+        output.puts ''
       end
     end
 
-    def number_mactch
-      # -
+    def number_match(input)
+      input.include?('@secret_number') ? (puts '-') : (puts '')
     end
 
-    def exact_match
-      # +
-    end
+            #my_string.include?('ahr') ? (puts 'String includes ahr') : (puts 'String does not include ahr')
+            # my_string = "abcdefg"
+            #if my_string.include? "cde"
+            #puts "String includes 'cde'"
+            # end
 
+            #  def number_match(input)
+            #    if secret_number.match == guess.match
+            #      output.puts '-'
+            #    else
+            #      output.puts ''
+            #    end
+            #  end
 
-
-
-
+            #  def exact_match(input)
+            #    if secret_number.match == guess.match
+            #      output.puts '-'
+            #    else
+            #      output.puts ''
+            #    end
   end
 end
-
-
-
-
-#puts input
-#if input.size <= 3
-#  puts "Try guessing a number with four digits."
-#elsif input.size >= 5
-#  puts "Try guessing a number with four digits."
-#else
-#
-# end
